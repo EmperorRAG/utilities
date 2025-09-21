@@ -37,7 +37,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build && npm run build:types",
-		"build:types": "dts-bundle-generator --project tsconfig.types.json -o dist/utilities.d.ts src/index.ts",
+		"build:types": "tsc --project tsconfig.types.json",
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"test": "vitest",

@@ -4,7 +4,7 @@ import type { UserConfig } from 'vite';
 export default {
 	build: {
 		lib: {
-			entry: 'src/index.ts',
+			entry: 'src/utilities.ts',
 			name: 'Utilities',
 			fileName: 'utilities',
 			formats: ['es', 'umd'],
