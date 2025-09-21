@@ -4,11 +4,11 @@ import {
 	getAllObjectInputLabelExpectedObjects,
 	getAllPrimitiveInputLabelExpectedObjects,
 } from './stringable.fixtures';
-import { IsValuePrimitiveStringable, IsValueStringable } from './stringable.types';
+import { isValuePrimitiveStringable, isValueStringable } from './stringable.types';
 
-const runExpectToBeTableTestIsValueStringable = runExpectToBeTableTest(IsValueStringable);
+const runExpectToBeTableTestIsValueStringable = runExpectToBeTableTest(isValueStringable);
 
-const runExpectToBeTableTestIsPrimitiveValueStringable = runExpectToBeTableTest(IsValuePrimitiveStringable);
+const runExpectToBeTableTestIsPrimitiveValueStringable = runExpectToBeTableTest(isValuePrimitiveStringable);
 
 /**
  * Unit test: Verifies that IsValueStringable returns true for all primitive types.

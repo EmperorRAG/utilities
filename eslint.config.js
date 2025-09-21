@@ -5,7 +5,7 @@ import { globalIgnores } from 'eslint/config';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 
 export default defineConfig([
-	globalIgnores(['dist', '*.config.ts']),
+	globalIgnores(['dist', '*.config.ts', 'coverage']),
 	{
 		files: ['**/*.ts'],
 		extends: [eslint.configs.recommended, ...tseslint.configs.strictTypeChecked, ...tseslint.configs.stylisticTypeChecked, eslintConfigPrettier],

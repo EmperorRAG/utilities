@@ -42,4 +42,4 @@ export { isNull, isBigInt, isSymbol, isString, isNumber, isBoolean, isUndefined,
 export { isArray, isDate, isRegExp, hasCustomToStringTag, throwsOnToString, isPlainObject, isObject } from './lib/types/object.types';
 export { isArrowFunction, isNamedFunction, isFunction } from './lib/types/function.types';
 export type { Stringable, PrimitiveStringable } from './lib/types/stringable/stringable.types';
-export { IsValueStringable, IsValuePrimitiveStringable } from './lib/types/stringable/stringable.types';
+export { isValueStringable as IsValueStringable, isValuePrimitiveStringable as IsValuePrimitiveStringable } from './lib/types/stringable/stringable.types';

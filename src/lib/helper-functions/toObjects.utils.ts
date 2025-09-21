@@ -97,3 +97,124 @@ export const toOptionsObjects = <T>(values: T[]): { options: T }[] => toObjects<
  * @returns {object[]} An array of objects with the property 'defaultValue' and corresponding values.
  */
 export const toDefaultValueObjects = <T>(values: T[]): { defaultValue: T }[] => toObjects<'defaultValue', T>('defaultValue', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'placeholder'.
+ * This is a curried version of toObjects with propertyName preset to 'placeholder'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'placeholder' and corresponding values.
+ *
+ * Example usage:
+ *   toPlaceholderObjects(['foo', 'bar']);
+ *   // [ { placeholder: 'foo' }, { placeholder: 'bar' } ]
+ */
+export const toPlaceholderObjects = <T>(values: T[]): { placeholder: T }[] => toObjects<'placeholder', T>('placeholder', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'min'.
+ * This is a curried version of toObjects with propertyName preset to 'min'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'min' and corresponding values.
+ */
+export const toMinObjects = <T>(values: T[]): { min: T }[] => toObjects<'min', T>('min', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'max'.
+ * This is a curried version of toObjects with propertyName preset to 'max'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'max' and corresponding values.
+ */
+export const toMaxObjects = <T>(values: T[]): { max: T }[] => toObjects<'max', T>('max', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'required'.
+ * This is a curried version of toObjects with propertyName preset to 'required'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'required' and corresponding values.
+ */
+export const toRequiredObjects = <T>(values: T[]): { required: T }[] => toObjects<'required', T>('required', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'columns'.
+ * This is a curried version of toObjects with propertyName preset to 'columns'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'columns' and corresponding values.
+ */
+export const toColumnsObjects = <T>(values: T[]): { columns: T }[] => toObjects<'columns', T>('columns', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'description'.
+ * This is a curried version of toObjects with propertyName preset to 'description'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'description' and corresponding values.
+ */
+export const toDescriptionObjects = <T>(values: T[]): { description: T }[] => toObjects<'description', T>('description', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'styles'.
+ * This is a curried version of toObjects with propertyName preset to 'styles'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'styles' and corresponding values.
+ */
+export const toStylesObjects = <T>(values: T[]): { styles: T }[] => toObjects<'styles', T>('styles', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'id'.
+ * This is a curried version of toObjects with propertyName preset to 'id'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'id' and corresponding values.
+ */
+export const toIdObjects = <T>(values: T[]): { id: T }[] => toObjects<'id', T>('id', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'formId'.
+ * This is a curried version of toObjects with propertyName preset to 'formId'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'formId' and corresponding values.
+ */
+export const toFormIdObjects = <T>(values: T[]): { formId: T }[] => toObjects<'formId', T>('formId', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'errorId'.
+ * This is a curried version of toObjects with propertyName preset to 'errorId'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'errorId' and corresponding values.
+ */
+export const toErrorIdObjects = <T>(values: T[]): { errorId: T }[] => toObjects<'errorId', T>('errorId', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'valid'.
+ * This is a curried version of toObjects with propertyName preset to 'valid'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'valid' and corresponding values.
+ */
+export const toValidObjects = <T>(values: T[]): { valid: T }[] => toObjects<'valid', T>('valid', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'defaultChecked'.
+ * This is a curried version of toObjects with propertyName preset to 'defaultChecked'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'defaultChecked' and corresponding values.
+ */
+export const toDefaultCheckedObjects = <T>(values: T[]): { defaultChecked: T }[] => toObjects<'defaultChecked', T>('defaultChecked', values);
+
+/**
+ * Converts an array of values into an array of objects with the property name 'multiple'.
+ * This is a curried version of toObjects with propertyName preset to 'multiple'.
+ *
+ * @param values - The array of values to convert.
+ * @returns {object[]} An array of objects with the property 'multiple' and corresponding values.
+ */
+export const toMultipleObjects = <T>(values: T[]): { multiple: T }[] => toObjects<'multiple', T>('multiple', values);

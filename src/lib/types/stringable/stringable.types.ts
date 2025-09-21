@@ -25,32 +25,32 @@ export type PrimitiveStringable = string | number | boolean | bigint | symbol | 
  *
  * @example
  * // Primitives
- * IsValueStringable("test"); // true
- * IsValueStringable(42); // true
- * IsValueStringable(true); // true
- * IsValueStringable(undefined); // true
- * IsValueStringable(null); // true
- * IsValueStringable(Symbol("sym")); // true
- * IsValueStringable(123n); // true
+ * isValueStringable("test"); // true
+ * isValueStringable(42); // true
+ * isValueStringable(true); // true
+ * isValueStringable(undefined); // true
+ * isValueStringable(null); // true
+ * isValueStringable(Symbol("sym")); // true
+ * isValueStringable(123n); // true
  *
  * // Objects
- * IsValueStringable({}); // true
- * IsValueStringable([]); // true
- * IsValueStringable(new Date()); // true
- * IsValueStringable(/abc/); // true
+ * isValueStringable({}); // true
+ * isValueStringable([]); // true
+ * isValueStringable(new Date()); // true
+ * isValueStringable(/abc/); // true
  *
  * // Functions
- * IsValueStringable(() => {}); // true
+ * isValueStringable(() => {}); // true
  *
  * // Custom object with Symbol.toStringTag
  * const obj = { [Symbol.toStringTag]: "Custom" };
- * IsValueStringable(obj); // true
+ * isValueStringable(obj); // true
  *
  * // Value that throws on String conversion (rare)
  * // const throwingObj = { toString() { throw new Error("fail"); } };
- * // IsValueStringable(throwingObj); // true (but String(throwingObj) would throw)
+ * // isValueStringable(throwingObj); // true (but String(throwingObj) would throw)
  */
-export function IsValueStringable(value: unknown): value is Stringable {
+export function isValueStringable(value: unknown): value is Stringable {
 	switch (typeof value) {
 		case 'string':
 		case 'number':
@@ -77,18 +77,18 @@ export function IsValueStringable(value: unknown): value is Stringable {
  * @returns True if the value is a primitive that can be safely converted to a string
  *
  * @example
- * IsValuePrimitiveStringable("test"); // true
- * IsValuePrimitiveStringable(42); // true
- * IsValuePrimitiveStringable(true); // true
- * IsValuePrimitiveStringable(undefined); // true
- * IsValuePrimitiveStringable(null); // true
- * IsValuePrimitiveStringable(Symbol("sym")); // true
- * IsValuePrimitiveStringable(123n); // true
- * IsValuePrimitiveStringable({}); // false
- * IsValuePrimitiveStringable([]); // false
- * IsValuePrimitiveStringable(() => {}); // false
+ * isValuePrimitiveStringable("test"); // true
+ * isValuePrimitiveStringable(42); // true
+ * isValuePrimitiveStringable(true); // true
+ * isValuePrimitiveStringable(undefined); // true
+ * isValuePrimitiveStringable(null); // true
+ * isValuePrimitiveStringable(Symbol("sym")); // true
+ * isValuePrimitiveStringable(123n); // true
+ * isValuePrimitiveStringable({}); // false
+ * isValuePrimitiveStringable([]); // false
+ * isValuePrimitiveStringable(() => {}); // false
  */
-export function IsValuePrimitiveStringable(value: unknown): value is PrimitiveStringable {
+export function isValuePrimitiveStringable(value: unknown): value is PrimitiveStringable {
 	switch (typeof value) {
 		case 'string':
 		case 'number':
