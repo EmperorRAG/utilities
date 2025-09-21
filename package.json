@@ -2,7 +2,7 @@
 	"name": "@emperorrag/utilities",
 	"description": "A collection of utilities for testing and development in TypeScript projects.",
 	"private": false,
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": "",
 	"license": "MIT",
 	"type": "module",
