@@ -3,7 +3,7 @@ const path = require('path');
 
 const SRC_DIR = path.join(__dirname, '../src');
 const LIB_DIR = path.join(SRC_DIR, 'lib');
-const INDEX_FILE = path.join(SRC_DIR, 'index.ts');
+const INDEX_FILE = path.join(SRC_DIR, 'utilities.ts');
 
 // Helper to get all .ts files recursively
 function getAllTSFiles(dir) {
